@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/shape_grid_bg"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgFunctionIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_taobao"/>
+    <TextView
+        android:id="@+id/tvFuncName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/widget_padding"
+        android:textColor="@color/text_color_black"
+        android:text="淘宝"/>
+</LinearLayout>

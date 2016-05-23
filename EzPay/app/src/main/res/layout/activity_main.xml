@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activity.MainActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvRecordList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/record"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:gravity="center"
+                    android:text="账单"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    <com.dzs.ezpay.view.customview.NoScrollViewPager
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </com.dzs.ezpay.view.customview.NoScrollViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray_line"/>
+    <RadioGroup
+        android:id="@+id/rgBottoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/barColor"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/wallet"
+            android:textSize="@dimen/text_size_small"
+            android:padding="@dimen/widget_padding"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@color/radio_button_color"
+            android:drawableTop="@drawable/menu_pay"
+            android:drawablePadding="4dp"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rbLife"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:text="@string/life"
+            android:button="@null"
+            android:textColor="@color/radio_button_color"
+            android:padding="@dimen/widget_padding"
+            android:gravity="center"
+            android:drawableTop="@drawable/menu_life"
+            android:textSize="@dimen/text_size_small"
+            android:checked="false"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rbFin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/fin"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:textColor="@color/radio_button_color"
+            android:gravity="center"
+            android:checked="false"
+            android:textSize="@dimen/text_size_small"
+            android:drawableTop="@drawable/menu_fin"
+            android:padding="@dimen/widget_padding"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rbMe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/person"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:textColor="@color/radio_button_color"
+            android:gravity="center"
+            android:checked="false"
+            android:textSize="@dimen/text_size_small"
+            android:drawableTop="@drawable/menu_person"
+            android:padding="@dimen/widget_padding"
+            android:background="?android:selectableItemBackground"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>
+
